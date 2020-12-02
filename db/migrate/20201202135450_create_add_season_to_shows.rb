@@ -1,11 +1,8 @@
 class CreateAddSeasonToShows < ActiveRecord::Migration[5.2]
 
-
-  # continue forming this migration then migrate
+  # need to create second migration with 002 at beginning of title
   def change
-    add_column :shows, :season do |t|
-      t.string :season
-    end
+    add_column :shows, :season, :string
   end
 
 end
